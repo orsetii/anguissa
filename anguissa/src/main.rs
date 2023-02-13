@@ -30,14 +30,3 @@ fn main() {
     }
 
 }
-
-
-fn read_can_dev() -> std::io::Result<String> {
-
-    let file = File::open("/dev/vcan0")?;
-    let mut buf_reader = std::io::BufReader::new(file);
-    let mut contents = String::new();
-    buf_reader.read_to_string(&mut contents)?;
-
-    Ok(contents)
-}
