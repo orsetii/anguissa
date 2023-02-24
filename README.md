@@ -3,9 +3,8 @@
 ## Roadmap
 
 ### Phase 1
-- Implement same, overlayed functionality on top of `socketcan` crate
+- Subcommand to listen, seperate most existing functionality into that.
 - Then using that, create nice looking UI explaining parts of the CAN packet.
-- Get CLI flags etc working 
 - Implement the CAN net interfacing code myself.
 - Test Suite working.
 
